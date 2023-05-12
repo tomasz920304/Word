@@ -52,6 +52,7 @@
             this.btnNew.TabIndex = 0;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnOpen
             // 
@@ -61,6 +62,7 @@
             this.btnOpen.TabIndex = 1;
             this.btnOpen.Text = "Open";
             this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // btnSaveAs
             // 
@@ -70,6 +72,7 @@
             this.btnSaveAs.TabIndex = 2;
             this.btnSaveAs.Text = "SaveAs";
             this.btnSaveAs.UseVisualStyleBackColor = true;
+            this.btnSaveAs.Click += new System.EventHandler(this.btnSaveAs_Click);
             // 
             // btnBold
             // 
@@ -80,6 +83,7 @@
             this.btnBold.TabIndex = 3;
             this.btnBold.Text = "B";
             this.btnBold.UseVisualStyleBackColor = true;
+            this.btnBold.Click += new System.EventHandler(this.btnBold_Click);
             // 
             // btnItalic
             // 
@@ -90,6 +94,7 @@
             this.btnItalic.TabIndex = 4;
             this.btnItalic.Text = "I";
             this.btnItalic.UseVisualStyleBackColor = true;
+            this.btnItalic.Click += new System.EventHandler(this.btnItalic_Click);
             // 
             // btnUnderline
             // 
@@ -100,6 +105,7 @@
             this.btnUnderline.TabIndex = 5;
             this.btnUnderline.Text = "U";
             this.btnUnderline.UseVisualStyleBackColor = true;
+            this.btnUnderline.Click += new System.EventHandler(this.btnUnderline_Click);
             // 
             // label1
             // 
@@ -118,6 +124,7 @@
             this.cmbFont.Name = "cmbFont";
             this.cmbFont.Size = new System.Drawing.Size(121, 21);
             this.cmbFont.TabIndex = 7;
+            this.cmbFont.SelectedIndexChanged += new System.EventHandler(this.cmbFont_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -136,6 +143,7 @@
             this.cmbFontSize.Name = "cmbFontSize";
             this.cmbFontSize.Size = new System.Drawing.Size(121, 21);
             this.cmbFontSize.TabIndex = 9;
+            this.cmbFontSize.SelectedIndexChanged += new System.EventHandler(this.cmbFontSize_SelectedIndexChanged);
             // 
             // btnColor
             // 
@@ -145,6 +153,7 @@
             this.btnColor.TabIndex = 10;
             this.btnColor.Text = "Color";
             this.btnColor.UseVisualStyleBackColor = true;
+            this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
             // 
             // pbColor
             // 
@@ -162,7 +171,7 @@
             this.rtbContent.TabIndex = 12;
             this.rtbContent.Text = "";
             // 
-            // Form1
+            // Word
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -180,8 +189,9 @@
             this.Controls.Add(this.btnSaveAs);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.btnNew);
-            this.Name = "Form1";
+            this.Name = "Word";
             this.Text = "Mój Word";
+            this.Load += new System.EventHandler(this.Word_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbColor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
