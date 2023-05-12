@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Word
 {
-    public partial class Form1 : Form
+    public partial class Word : Form
     {
-        public Form1()
+        public Word()
         {
             InitializeComponent();
         }

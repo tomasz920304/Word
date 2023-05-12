@@ -1,6 +1,6 @@
 ﻿namespace Word
 {
-    partial class Form1
+    partial class Word
     {
         /// <summary>
         /// Required designer variable.
